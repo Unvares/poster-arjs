@@ -12,28 +12,69 @@
   <a-scene
   vr-mode-ui="enabled: false"
   embedded>
+  <a-assets>
+    <img id="button" src="assets/images/button.png">
+    <img id="BillysBand" src="assets/images/BillysBand.png">
+    <img id="Dzin" src="assets/images/Dzin.png">
+    <img id="ForbiddenDrummers" src="assets/images/ForbiddenDrummers.png">
+    <img id="IgorRasteryaev" src="assets/images/IgorRasteryaev.png">
+    <img id="IOWA" src="assets/images/IOWA.png">
+    <img id="Kasta" src="assets/images/Kasta.png">
+    <img id="KlavaKoka" src="assets/images/KlavaKoka.png">
+    <img id="LSP" src="assets/images/LSP.png">
+    <img id="Mudburn" src="assets/images/Mudburn.png">
+    <img id="Solomona" src="assets/images/Solomona.png">
+    <img id="VadimSamoylov" src="assets/images/VadimSamoylov.png">
+  </a-assets>
+
     <a-marker
     type="pattern"
     url="assets/marker/UralMusicNight.patt"
-    id="marker">
-      <a-entity id="content"
-      scale="0 0 0">
-        <a-box
-        scale="1 1 1"
-        color="yellow"
-        position="-1 0 0"></a-box>
-        <a-box
-        scale="1 1 1"
-        color="yellow"
-        position="1 0 0"></a-box>
-        <a-box
-        scale="1 1 1"
-        color="yellow"
-        position="0 0 1"></a-box>
-        <a-box
-        scale="1 1 1"
-        color="yellow"
-        position="0 0 -1"></a-box>
+    id="marker"
+    smooth="true">
+      <a-entity
+      id="content"
+      scale="0 0 0"
+      rotation="-90 0 0"
+      position="1.3 0 -2.6">
+        <a-image
+        src="#button"
+        position="0 0 0"
+        scale="2.25 0.5 0.5"></a-image>
+        <a-image
+        src="#BillysBand"
+        position="2.415375 -1.5105 0"
+        rotation="0 0 0"></a-image>
+        <a-image
+        src="#Dzin"
+        position="1.254 -2.557875 0"></a-image>
+        <a-image
+        src="#ForbiddenDrummers"
+        position="-0.29925 -2.83575 0"></a-image>
+        <a-image
+        src="#IgorRasteryaev"
+        position="-1.75275 -2.247225 0"></a-image>
+        <a-image
+        src="#IOWA"
+        position="-2.677575 -0.9747 0"></a-image>
+        <a-image
+        src="#Kasta"
+        position="-2.785875 0.58995 0"></a-image>
+        <a-image
+        src="#KlavaKoka"
+        position="-2.0512875 1.973625 0"></a-image>
+        <a-image
+        src="#LSP"
+        position="-0.684 2.7645 0"></a-image>
+        <a-image
+        src="#Mudburn"
+        position="0.88065 2.7075 0"></a-image>
+        <a-image
+        src="#Solomona"
+        position="2.1831 1.83255 0"></a-image>
+        <a-image
+        src="#VadimSamoylov"
+        position="2.8215 0.39615 0"></a-image>
       </a-entity>
     </a-marker>
     <a-entity camera></a-entity>
