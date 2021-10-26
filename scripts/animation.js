@@ -3,9 +3,13 @@
 const _AR = {
     contentElement: document.getElementById('content'),
     markerElement: document.getElementById('marker'),
+    buttonElement: document.querySelector('.button'),
 };
 
 _AR.markerElement.addEventListener('markerFound', startAnimation);
+_AR.buttonElement.addEventListener('click', () => {
+  window.open('https://uralmusicnight.ru/', '_blank');
+});
 
 function startAnimation() {
     let increasingDuration = 400;
